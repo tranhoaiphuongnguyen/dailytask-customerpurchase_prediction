@@ -19,7 +19,7 @@ The goal is to translate data patterns into actionable marketing insights and qu
 This project was inspired by the [DataCamp Real World Project – *Will This Customer Purchase Your Product?*](https://app.datacamp.com/learn/projects/2470), with extended analysis, visualisations and business insights.
 
 The datasets used in this analysis can be found [here](online_shopping_session_data.csv).  
-The Python code can be found [here](code.py).  
+The Python code can be found [here](Pythoncode.ipynb).  
 
 ---
 
@@ -66,20 +66,13 @@ The analysis follows a structured workflow:
 | New customer | 27.3% |
 | Returning customer | 19.6% |
 
-#### Visualisation
 ![](visualisation/purchase_rate.png)
 
-Analysis of online shopping sessions during the busiest months (November–December) reveals a noticeable difference in purchase likelihood between new and returning customers.
-- New customers converted at an average rate of 27.3%, while
-- Returning customers converted at 19.6%.
+An analysis of online shopping sessions during the peak months of November and December shows a clear difference in purchase likelihood between new and returning customers. New customers converted at an average rate of 27.3%, while returning customers converted at only 19.6%.
 
-Although returning users are typically expected to have higher purchase intent due to prior familiarity, the data suggests the opposite. This might indicate that:
-- The company’s holiday campaigns and promotions are particularly effective at attracting first-time buyers.
-- Returning visitors could be browsing more without necessarily repurchasing, possibly comparing offers or waiting for better deals.
-  
-From a marketing perspective
-- The higher conversion rate among new customers suggests strong acquisition performance, but weaker retention.
-- Efforts should be made to re-engage returning customers such as through personalised email recommendations, loyalty discounts or targeted remarketing.
+Although returning visitors are generally expected to have higher purchase intent due to their familiarity with the brand, the data suggests otherwise. This may indicate that the company’s holiday campaigns and promotions are particularly effective at attracting first-time buyers, while returning users may be browsing more cautiously—comparing offers, checking for discounts, or waiting for better deals before committing to a purchase.
+
+From a marketing perspective, the stronger conversion performance among new customers reflects effective acquisition strategies, but also highlights weaker retention. Strengthening re-engagement efforts—such as personalized product recommendations, loyalty incentives, or targeted remarketing—could help improve conversion rates among returning shoppers.
 
 ---
 
@@ -93,16 +86,13 @@ The strongest relationship was observed between Administrative_Duration and Prod
 | Informational ↔ ProductRelated | 0.37 |
 | Administrative ↔ Informational | 0.26 |
 
-#### Visualisation
 ![](visualisation/correlation_timespent.png)
 
-The heatmap illustrates the relationships between the time returning customers spent on different types of web pages during November and December.
+The analysis shows how returning customers spent their time across different types of pages on the website during November and December. The strongest relationship appears between time spent on administrative or account-related pages and time spent on product pages. This means that when returning customers are actively managing their accounts or moving through transactional steps, they also tend to spend more time reviewing product details. In practical terms, these users are likely browsing with a clear intention to purchase, taking time to evaluate items before making a decision.
 
-Notably, the time spent on Administrative pages and Product-related pages shows the strongest correlation (0.42). This suggests that when returning customers spend more time managing their accounts or navigating transactional pages, they also tend to spend more time viewing product details. In other words, these users are likely to be engaged in goal-oriented, purchase-driven browsing behaviour, taking time to evaluate products before making a buying decision.
+In contrast, the connections involving informational or general content pages are noticeably weaker. This suggests that returning customers do not rely heavily on general site information during their shopping experience.
 
-Meanwhile, the weaker correlations involving Informational pages (0.26–0.37) indicate that reading general content or site information plays a smaller role in their purchasing journey.
-
-Overall, the results point towards a focused and intentional shopping pattern among returning customers that they interact mainly with pages that directly support purchasing decisions rather than casual browsing.
+Overall, the results indicate that returning visitors behave in a focused, purpose-driven way. They primarily interact with pages that directly support the purchasing process, rather than engaging in casual or exploratory browsing.
 
 ---
 
@@ -118,14 +108,11 @@ A binomial probability model was used to estimate the likelihood of achieving at
 | Sessions Simulated | 500 |
 | Probability ≥ 100 Purchases | 91.9% |
 
-#### Visualisation
 ![](visualisation/binomialdistribution_returningcustomers.png)
 
-The binomial probability distribution illustrates the likelihood of achieving at least 100 purchases out of 500 online shopping sessions by returning customers after a 15% increase in their purchase rate.
+The analysis of the binomial probability distribution shows the likelihood of achieving at least 100 purchases out of 500 sessions from returning customers after their purchase rate increases by 15%. The result is a probability of about 91.9%, which means it is very likely that the campaign will meet or even surpass the target of 100 sales. The expected average outcome sits at around 110 purchases, so most scenarios fall safely above the goal.
 
-The calculated probability is approximately 91.9%, indicating a very strong likelihood that the campaign will reach or exceed the target of 100 sales. The distribution is centred around the mean of roughly 110 purchases, suggesting that most expected outcomes fall comfortably above the target threshold.
-
-From a business perspective, this implies that the marketing campaign aimed at returning customers is highly promising. The uplift in conversion rate significantly boosts expected sales performance, demonstrating that investing in re-engagement and loyalty-based campaigns could deliver substantial returns during peak shopping months.
+From a business standpoint, this suggests that the marketing campaign directed at returning customers is highly encouraging. The improvement in conversion rate has a strong positive effect on expected sales, indicating that investing in re-engagement and loyalty-focused initiatives can generate meaningful returns during peak shopping periods.
 
 ---
 
