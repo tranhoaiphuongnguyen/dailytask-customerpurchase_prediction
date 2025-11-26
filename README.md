@@ -19,7 +19,7 @@ The goal is to translate data patterns into actionable marketing insights and qu
 This project was inspired by the [DataCamp Real World Project – *Will This Customer Purchase Your Product?*](https://app.datacamp.com/learn/projects/2470), with extended analysis, visualisations and business insights.
 
 The datasets used in this analysis can be found [here](online_shopping_session_data.csv).  
-The Python analysis (Jupyter notebook) can be found [here](analysis.ipynb).  
+The Python code can be found [here](code.py).  
 
 ---
 
