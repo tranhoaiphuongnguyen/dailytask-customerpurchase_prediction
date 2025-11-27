@@ -44,16 +44,16 @@ The dataset includes 10,746 sessions recorded between January 2023 and July 2024
 
 The analysis follows a structured workflow:
 1. Data cleaning and preparation 
-   - Duplicates removed, data types corrected, categorical values standardised.  
-   - Focused on sessions from November–December to capture peak-season behaviour.
+ - Duplicates removed, data types corrected, categorical values standardised.  
+ - Focused on sessions from November–December to capture peak-season behaviour.
      
 2. Exploratory Data Analysis (EDA)  
-   - Calculated purchase rates by customer type.  
-   - Correlation matrix created for browsing time metrics.  
-   - Statistical simulation performed using binomial probability.
+ - Calculated purchase rates by customer type.  
+ - Correlation matrix created for browsing time metrics.  
+ - Statistical simulation performed using binomial probability.
      
 3. Visualisation  
-   - Charts created using `matplotlib` and `seaborn` for clarity and interpretability.
+ - Charts created using `matplotlib` and `seaborn` for clarity and interpretability.
 
 ---
 
@@ -70,11 +70,10 @@ The analysis follows a structured workflow:
 
 An analysis of online shopping sessions during the peak months of November and December shows a clear difference in purchase likelihood between new and returning customers. New customers converted at an average rate of 27.3%, while returning customers converted at only 19.6%.
 
-Although returning visitors are generally expected to have higher purchase intent due to their familiarity with the brand, the data suggests otherwise. This may indicate that the company’s holiday campaigns and promotions are particularly effective at attracting first-time buyers, while returning users may be browsing more cautiously—comparing offers, checking for discounts, or waiting for better deals before committing to a purchase.
+Although returning visitors are generally expected to have higher purchase intent due to their familiarity with the brand, the data suggests otherwise. This may indicate that the company’s holiday campaigns and promotions are particularly effective at attracting first-time buyers, while returning users may be browsing more cautiously, comparing offers, checking for discounts, or waiting for better deals before committing to a purchase.
 
-From a marketing perspective, the stronger conversion performance among new customers reflects effective acquisition strategies, but also highlights weaker retention. Strengthening re-engagement efforts—such as personalized product recommendations, loyalty incentives, or targeted remarketing—could help improve conversion rates among returning shoppers.
+From a marketing perspective, the stronger conversion performance among new customers reflects effective acquisition strategies, but also highlights weaker retention. Strengthening re-engagement efforts, such as personalised product recommendations, loyalty incentives, or targeted remarketing, could help improve conversion rates among returning shoppers.
 
----
 
 ### Correlation between page durations (Returning customers)
 
@@ -94,7 +93,6 @@ In contrast, the connections involving informational or general content pages ar
 
 Overall, the results indicate that returning visitors behave in a focused, purpose-driven way. They primarily interact with pages that directly support the purchasing process, rather than engaging in casual or exploratory browsing.
 
----
 
 ### Probability of campaign success
 
